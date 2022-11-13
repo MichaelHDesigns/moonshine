@@ -55,6 +55,16 @@ const networks = {
 		scriptHash: 0x05,
 		wif: 0x80
 	},
+	hthcoin: {
+		messagePrefix: '\x18HomelessCoin Signed Message:\n',
+		bip32: {
+		        public: 0x0488b21e,
+		        private: 0x0488ade4
+		},
+		pubKeyHash: 0x64,
+		scriptHash: 0x28,
+		wif: 0xe4
+	},
 };
 
 //Max amount of BTC/LTC.
@@ -64,6 +74,7 @@ const maxCoins = {
 	litecoin: 8400000000000000,
 	litecoinTestnet: 8400000000000000,
 	vertcoin: 8400000000000000,
+	hthcoin: 7000000000000000,
 };
 
 //Returns an array of all available coins from the networks object.
