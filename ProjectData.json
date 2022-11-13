@@ -84,7 +84,8 @@
 
     },
     "donationAddresses": {
-      "bitcoin": "bc1qm6knmtrk5jfyt57rwkm8j74kxskxyrl504tlc9",
+      "bitcoin": "3Kmqb2d9fBTq7kr66Hp5N47661QzS9dKoQ",
+      "hthcoin": "hWrjjP7w4iE5tezxDG3jD7xCTmikw3Kgoy",
       "bitcoinTestnet": "tb1qxvg88t7a498yfdxgs4rjaz3r75dyr64h5r5wd7",
       "litecoin": "ltc1qrctkm565xale82pjt6nsxsyvvmln2qz8dpf6q9",
       "litecoinTestnet": "tltc1qxvg88t7a498yfdxgs4rjaz3r75dyr64hdtksah"
