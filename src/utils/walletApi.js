@@ -426,6 +426,11 @@ const fallbackBroadcastTransaction = async ({ rawTx = "", selectedCrypto = "bitc
 				response = await response.json();
 				response = response.status === "success" ? response.data.txid : "";
 				break;
+			case "hthcoin":
+				response = await fetch(`http://154.12.237.243:3001/insight-api/tx`, config);
+				response = await response.text();
+				if (response.includes("error")) response = "";
+				break;
 		}
 		if (response !== "") return { error: false, data: response };
 		return { error: true, data: "" };
