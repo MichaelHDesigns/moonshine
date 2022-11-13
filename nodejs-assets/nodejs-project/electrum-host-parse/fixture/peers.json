@@ -49,5 +49,8 @@
     "electrum.catpool.io t55001 s55002",
     "electrum2.catpool.io t55001 s55002",
     "www.verters.com t55001 s55002"
-  ]
+  ],
+  "hthcoin": [
+    "http://154.12.237.243 t65000 s65000",
+  ],
 }
