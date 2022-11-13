@@ -663,6 +663,7 @@ const openTxId = (txid = "", selectedCrypto = ""): void => {
 	if (selectedCrypto === "litecoin") url = `https://chain.so/tx/LTC/${txid}`;
 	if (selectedCrypto === "litecoinTestnet") url = `https://chain.so/tx/LTCTEST/${txid}`;
 	if (selectedCrypto === "vertcoin") url = `https://insight.vertcoin.org/tx/${txid}`;
+	if (selectedCrypto === "hthcoin") url = `http://154.12.237.243:3001/insight-api/tx/${txid}`;
 	openUrl(url);
 };
 
