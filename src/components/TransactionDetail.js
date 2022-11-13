@@ -128,6 +128,7 @@ class TransactionDetail extends PureComponent {
 		if (selectedCrypto === "litecoin") url = `https://chain.so/block/LTC/${block}`;
 		if (selectedCrypto === "litecoinTestnet") url = `https://chain.so/block/LTC/${block}`;
 		if (selectedCrypto === "vertcoin") url = `https://insight.vertcoin.org/block/${block}`;
+		if (selectedCrypto === "hthcoin") url = `http://154.12.237.243:3001/insight-api/block/${block}`;
 		openUrl(url);
 	};
 	
@@ -139,6 +140,7 @@ class TransactionDetail extends PureComponent {
 		if (selectedCrypto === "litecoin") url = `https://chain.so/address/LTC/${address}`;
 		if (selectedCrypto === "litecoinTestnet") url = `https://chain.so/address/LTCTEST/${address}`;
 		if (selectedCrypto === "vertcoin") url = `https://insight.vertcoin.org/address/${address}`;
+		if (selectedCrypto === "hthcoin") url = `http://154.12.237.243:3001/insight-api/address/${address}`;
 		openUrl(url);
 	};
 	
@@ -160,6 +162,9 @@ class TransactionDetail extends PureComponent {
 				break;
 			case "vertcoin":
 				url = `https://insight.vertcoin.org/tx/${tx}`;
+				break;
+			case "hthcoin":
+				url = `http://154.12.237.243:3001/insight-api/tx/HTH/${tx}`;
 				break;
 			default:
 				return;
